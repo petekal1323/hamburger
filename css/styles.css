@@ -1,0 +1,162 @@
+/******vars*********/
+/*******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1; }
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0; }
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background: rgba(13, 110, 139, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .menu-wrap .hamburger div {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease-in-out; }
+      .menu-wrap .hamburger div::before, .menu-wrap .hamburger div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background-color: inherit; }
+      .menu-wrap .hamburger div::after {
+        top: 10px; }
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .menu-wrap .menu div {
+      background: rgba(13, 110, 139, 0.8);
+      border-radius: 50%;
+      width: 200vw;
+      height: 200vh;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease; }
+      .menu-wrap .menu div div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        transition: opacity 0.4s ease; }
+        .menu-wrap .menu div div ul li {
+          list-style: none;
+          color: white;
+          font-size: 1.5rem;
+          padding: 1rem;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer; }
+          .menu-wrap .menu div div ul li:hover {
+            transform: scale(1.2) skewY(-3deg); }
+          .menu-wrap .menu div div ul li a {
+            color: inherit;
+            text-decoration: none; }
+
+.content {
+  background-color: rgba(13, 110, 139, 0.8);
+  color: white;
+  height: 100vh;
+  position: relative; }
+  .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .content .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; }
+  .content h1 {
+    font-size: 4rem; }
+  .content p {
+    font-size: 1.3rem; }
+  .content .btn {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background: #01669e;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in; }
+    .content .btn:hover {
+      opacity: .6;
+      cursor: pointer; }
+
+@media (min-width: 768px) {
+  .menu-wrap {
+    position: unset !important; }
+    .menu-wrap .toggler,
+    .menu-wrap .hamburger {
+      display: none !important; }
+    .menu-wrap .menu {
+      width: 100% !important;
+      height: auto !important;
+      visibility: visible !important;
+      background: rgba(13, 110, 139, 0.8); }
+      .menu-wrap .menu div {
+        background: unset !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: unset !important;
+        border-radius: 0 !important;
+        transition: unset !important; }
+        .menu-wrap .menu div div {
+          max-width: 100% !important;
+          opacity: 1 !important;
+          display: flex;
+          justify-content: flex-end;
+          transition: unset !important; }
+          .menu-wrap .menu div div ul {
+            display: flex; }
+            .menu-wrap .menu div div ul li {
+              transition: unset !important; } }
+
+/*# sourceMappingURL=styles.css.map */
