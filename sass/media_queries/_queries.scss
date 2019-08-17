@@ -1,0 +1,20 @@
+@media (min-width: 768px){
+    .menu-icon{
+        display: none !important;
+    }
+    .active{
+        display: none !important;
+    }
+    .menu{
+        display: inline-block !important;
+        ul{
+            display: flex !important;
+            width: 40% !important;
+            justify-content: space-between !important;
+            position: fixed;
+            right: 5% !important;
+            top: .5% !important;
+        }
+
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "hamburger",
+  "version": "1.0.0",
+  "description": "hamburger-menu transform",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petekal1323/hamburger.git"
+  },
+  "author": "Peter Kalinowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petekal1323/hamburger/issues"
+  },
+  "homepage": "https://github.com/petekal1323/hamburger#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
