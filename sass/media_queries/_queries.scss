@@ -1,13 +1,13 @@
-@media (min-width: 768px){
-    .menu-icon{
+@media (min-width: 768px) {
+    .menu-icon {
         display: none !important;
     }
-    .active{
+    .active {
         display: none !important;
     }
-    .menu{
+    .menu {
         display: inline-block !important;
-        ul{
+        ul {
             display: flex !important;
             width: 40% !important;
             justify-content: space-between !important;
@@ -15,6 +15,5 @@
             right: 5% !important;
             top: .5% !important;
         }
-
     }
 }
