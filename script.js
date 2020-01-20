@@ -11,6 +11,9 @@ $(document).ready(function() {
         if ($(window).width() >= 768) {
             $(".menu-icon").removeClass('active');
             $(".menu").removeClass('active');
+        } else {
+            $(".menu-icon").addClass('active');
+            $(".menu").addClass('active');
         }
     });
 
