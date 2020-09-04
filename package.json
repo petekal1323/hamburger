@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/petekal1323/hamburger#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
